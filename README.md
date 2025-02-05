@@ -8,6 +8,10 @@ This simple script is designed to convert EBNF grammar descriptions into the GBN
 - Allows modification of conversion rules.
 - Easy to use.
 
+## Problems
+
+- After conversion, you need to handle additional problems like whitespaces and so on. Please read the [doc](https://github.com/ggerganov/llama.cpp/blob/master/grammars/README.md)
+
 ## Installation
 
 To use this script, you need to install the [Lark](https://github.com/lark-parser/lark) library. Run the following command to install it:
