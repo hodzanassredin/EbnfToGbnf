@@ -1,4 +1,3 @@
-
 # EBNF to GBNF (llama.cpp) Converter
 
 This simple script is designed to convert EBNF grammar descriptions into the GBNF format used in the [llama.cpp](https://github.com/ggerganov/llama.cpp) project.
