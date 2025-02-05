@@ -2,7 +2,7 @@ from lark import Lark, Tree, Token
 import argparse
 from typing import List
 
-# Определение грамматики EBNF в формате Lark
+# EBNF grammer for Lark
 ebnf_grammar = """
     start: rule+
     rule: ID "=" expression "."
@@ -79,7 +79,7 @@ def rebuild_ebnf(tree: Tree) -> str:
     result = [rebuild_rule(child, rule_names) if child.data == "rule" else rebuild_expression(child, rule_names) for child in tree.children]
     return "\n".join(result)
 
-# Создаем парсер
+# Parser
 ebnf_parser = Lark(ebnf_grammar, start='start')
 
 def convert(file_name: str) -> None:
