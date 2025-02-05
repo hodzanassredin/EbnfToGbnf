@@ -1,10 +1,55 @@
-# EbnfToGbnf
-Simple ebnf to gbnf(llama.cpp) convertor
 
-A simple script for converting your EBNF descriptions into the llama.cpp GBNF format. There are many variations of EBNF, so check the grammar in the main.py file, it is defined in the ebnf_grammar variable. You can also modify the conversion rules in functions whose names start with rebuild_.
+# EBNF to GBNF (llama.cpp) Converter
 
+This simple script is designed to convert EBNF grammar descriptions into the GBNF format used in the [llama.cpp](https://github.com/ggerganov/llama.cpp) project.
 
-> pip install Lark
-> python main.py example.ebnf
+## Features
 
+- Supports various EBNF variations.
+- Allows modification of conversion rules.
+- Easy to use.
 
+## Installation
+
+To use this script, you need to install the [Lark](https://github.com/lark-parser/lark) library. Run the following command to install it:
+
+```bash
+pip install Lark
+```
+
+## Usage
+
+To convert an EBNF file to GBNF, run the following command:
+
+```bash
+python main.py example.ebnf
+```
+
+Where `example.ebnf` is your EBNF grammar file.
+
+## Grammar Description
+
+The EBNF grammar is defined in the `ebnf_grammar` variable in the `main.py` file. You can modify it according to your requirements.
+
+## Modifying Conversion Rules
+
+You can modify the conversion rules by changing the functions whose names start with `rebuild_`. These functions handle the transformation of various EBNF elements into their corresponding GBNF elements.
+
+## Example
+
+Example usage of the script:
+
+```bash
+python main.py example.ebnf
+```
+
+## Error Handling
+
+The script handles the following errors:
+
+- File not found: Displays an error message.
+- Parsing errors: Displays an error message with the cause.
+
+---
+
+This improved `readme.md` file provides more detailed information about the script, its installation, usage, and the ability to modify the grammar and conversion rules.
