@@ -49,6 +49,3 @@ The script handles the following errors:
 - File not found: Displays an error message.
 - Parsing errors: Displays an error message with the cause.
 
----
-
-This improved `readme.md` file provides more detailed information about the script, its installation, usage, and the ability to modify the grammar and conversion rules.
